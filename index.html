@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karuzela</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/cb7eaf99ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="options">
+        <button class='options__button'>
+            <i class="fas fa-cog"></i>
+        </button>
+        <div class='options__list hidden'>
+            <label for="interval">Speed :</label>
+            <div class="intervalControl">
+                <input type="radio" name='interval' value="15000" class="intervalControl__control">
+                <label>slow</label>
+                <input type="radio" name='interval' value="9000" class="intervalControl__control">
+                <label>medium</label>
+                <input type="radio" name='interval' value="4000" class="intervalControl__control">
+                <label>fast</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="background"></div>
+        <img class='image' src="" alt="">
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
