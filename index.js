@@ -53,7 +53,7 @@ const changeBackgrounds = () => {
 
     image.src = pictures[index]
 
-    index++;
+    index = Math.floor(Math.random() * pictures.length);
 }
 
 
