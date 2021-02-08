@@ -10,12 +10,12 @@ const background = document.querySelector('.background')
 const container = document.querySelector('.container')
 
 
-fetch(`https://cms-strapi-weronika-wojcik.herokuapp.com/folders`)
+fetch(`https://cms-strapi-weronika-wojcik.herokuapp.com/projects`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
         data.forEach(folder => {
-            let sources = folder.Pics.map(pic => `https://cms-strapi-weronika-wojcik.herokuapp.com${pic.url}`)
+            let sources = folder.img.map(pic => pic.url)
             pictures = pictures.concat(sources)
             console.log(pictures)
 
